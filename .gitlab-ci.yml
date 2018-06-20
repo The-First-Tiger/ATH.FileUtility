@@ -5,14 +5,14 @@ stages:
 
 variables:
   project: "ATH.FileUtility"
+  build_path: "Source/$project"
 
 before_script:
+  - "cd $build_path"
   - "dotnet restore"
 
 build:
   stage: build
-  variables:
-    build_path: "Source/$project"
   script:
     - "cd $build_path"
     - "dotnet build"
