@@ -5,7 +5,7 @@ stages:
 
 variables:
   project: "ATH.FileUtility"
-  build_path: "Source/$project"
+  build_path: "Source"
 
 before_script:
   - "cd $build_path"
