@@ -1,4 +1,4 @@
-image: microsoft/dotnet:latest
+image: mono:4.4.0.182
 
 stages:
   - build
@@ -14,4 +14,4 @@ before_script:
 build:
   stage: build
   script:
-    - "dotnet build"
+    - MONO_IOMAP=case xbuild /t:Build /p:Configuration="Release" /p:Platform="Any CPU" $project.sln
