@@ -14,5 +14,4 @@ before_script:
 build:
   stage: build
   script:
-    - "cd $build_path"
     - "dotnet build"
