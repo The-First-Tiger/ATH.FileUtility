@@ -1,5 +1,2 @@
 language: csharp
-solution: ATH.FileUtility.sln
-
-before_script:
-  - cd Source
+solution: Source/ATH.FileUtility.sln
